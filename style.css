@@ -1,0 +1,55 @@
+html, body {
+  height: 100%;
+  background-color: black;
+  /* background-image: url(./rainbow_road.gif);
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+body {
+  display: flex;
+  flex-direction: column;
+  
+}
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+  
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30vh;
+}
+
+.navbar-nav li a {
+  color: antiquewhite;
+  font-size: 24px;
+}
+
+.nav-butts {
+  display: flex;
+  position: absolute;
+  right: 3vw;
+  }
+
+.navbar-brand {
+  margin-left: 3vw;
+}
+
+.navbar-expand-lg {
+  background-image: url(./wood-texture.jpg);
+  height: 20vh;
+  top: 10vh;
+}
+
+.navbar-expand-lg a {
+  color: rgb(226, 185, 132);
+  font-size: 36px;
+}
+
+.carousel-container {
+  height: 50vh;
+}
