@@ -7,12 +7,16 @@ html, body {
 }
 body {
   display: flex;
-  flex-direction: column;
-  
+  flex-direction: column; 
+  position: relative;
 }
 
-.contact .about {
-  justify-content: end
+.navbar-expand-lg {
+  background-image: url(./wood-texture.jpg);
+  height: 70vh;
+  top: 10vh;
+  display: flex;
+  justify-content: space-between;
 }
 
 .name {
@@ -20,6 +24,10 @@ body {
   font-size: 32px;
   margin-left: 3vw;
   font-family: 'Raleway', sans-serif;
+}
+
+.contact .about {
+  justify-content: end
 }
 
 .content {
@@ -33,37 +41,36 @@ body {
 .carousel-container {
   display: flex;
   justify-content: center;
-  margin-top: 30vh;
+  position: relative;
+  top: 30vh;
   height: 50vh;
 }
-
-
 
 .container-fluid {
   padding: 15px;
   display: flex;
   position: relative;
-  top: 70vh;
+  top: 100vh;
   max-width: 100vw;
   color: white;
 }
 
 .rounded-circle {
-  max-width: 40%;
-  flex: 1;
+  max-width: 30%;
+  height: auto;
+  flex: 2;
 }
 
 .about-me {
   flex: 1;
-  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-.navbar-expand-lg {
-  background-image: url(./wood-texture.jpg);
-  height: 70vh;
-  top: 10vh;
-  display: flex;
-  justify-content: space-between;
+.contact-container {
+  position: relative;
+  top: 160vh;
+  color: white;
+  padding: 50px;
 }
-
 

@@ -16,8 +16,8 @@
     <nav class="navbar navbar-expand-lg navbar-light ">
         <brand class="name">Kamon Kirker</brand>
         <div class="nav-container">
-          <button type="button" class="btn btn-outline-light about">About me</button>
-          <button type="button" class="btn btn-outline-light contact">Contact</button>
+          <button id="about-btn" type="button" class="btn btn-outline-light about">About me</button>
+          <button id="form-btn" type="button" class="btn btn-outline-light contact">Contact</button>
         </div>
     </nav>
     
@@ -32,7 +32,7 @@
     </div>
   </section>
 
-  <div class="container-fluid">
+  <div class="container-fluid" id="about-section">
     <img src="./disney.JPG" alt="photo" class="rounded-circle">
     <div class="about-me">
       About Kamon
@@ -41,12 +41,23 @@
     </div>
   </div>
 
-      <!-- <body>
-        <div class="content">
-          Footwork
-        </div>
-        <footer class="footer"></footer>
-      </body> -->
+  <div class="contact-container">
+    Reach out to Kamon by E-mail
+    <br>
+    <br>
+    <form>
+      <div id="form-section" class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      </div>
+
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Introduce yourself</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-warning">Submit</button>
+    </form>
+  </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
