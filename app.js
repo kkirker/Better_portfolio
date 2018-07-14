@@ -1,11 +1,14 @@
 window.onbeforeunload = function(){ window.scrollTo(0,0); }
-
+//since there is scrolls on clicks below I wanted a page load to always load at top
 
 $(window).load(function () {
   $('#gallery').jqcarousel();
+  //initalizes carousel plugin
   let count = 0;
+  //count is for click on carousel images, so that second click takes you to the project.
   console.log(count);
 
+  //scroll from about button to about section
   $("#about-btn").on('click', function() {
     console.log('button clicked about');
     $([document.documentElement, document.body]).animate({
@@ -13,6 +16,7 @@ $(window).load(function () {
     }, 2000);
 });
 
+//scroll from contact button to contact section
 $("#form-btn").on('click', function() {
   console.log('button clicked contact');
   $([document.documentElement, document.body]).animate({
@@ -20,6 +24,7 @@ $("#form-btn").on('click', function() {
   }, 2000);
 });
 
+//when link is clicked twice, crystal game page loads
 $('#crystals').on('click', function() {
   console.log('crystal clicked');
   count++;
@@ -28,6 +33,7 @@ $('#crystals').on('click', function() {
   }
 });
 
+//when ocean is clicked twice, trivia game page loads
 $('#trivia').on('click', function() {
   console.log('trivia clicked');
   count++;
@@ -36,6 +42,7 @@ $('#trivia').on('click', function() {
   }
 });
 
+//when train is clicked twice, train schedule page loads
 $('#train').on('click', function() {
   console.log('train clicked');
   count++;
@@ -44,6 +51,7 @@ $('#train').on('click', function() {
   }
 });
 
+//when music is clicked twice, venue search page loads
 $('#music').on('click', function() {
   console.log('music clicked');
   count++;
@@ -52,6 +60,7 @@ $('#music').on('click', function() {
   }
 });
 
+//when pokedex is clicked twice, giphy-dex page loads
 $('#poke').on('click', function() {
   console.log('poke clicked');
   count++;
